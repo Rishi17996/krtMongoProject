@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {{ result }}
+    <form action="http://localhost:5000/commentAdded" method="POST">
+      <input type="text" name="id" value="{{ result }}">
+      <h5>Name:</h5> <input type="text" name="name" />
+      <h5>Comment:</h5> <input type="text" name="comment" />
+      <input type="submit" alt="Comment" />
+    </form>
+  </body>
+</html>

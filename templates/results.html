@@ -5,8 +5,14 @@
     <title></title>
   </head>
   <body>
-    {% for record in json_projects %}
-      
+    {% for record in result %}
+    <form action="http://localhost:5000/recordContent" method="POST">
+      <p><input size="100px" name="doc" value="{{ record }}" readonly>
+      <input type="submit" alt="Show Record" /></br></p>
+      <hr>
+    </form>
     {% endfor %}
+      <img src="data:;base64,{{ img }}" alt="">
+
   </body>
 </html>
